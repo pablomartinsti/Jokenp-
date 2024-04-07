@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <title>Jokenpô</title>
+</head>
+
+<body>
+
+    <img class="computer" src="./asset/computer.png" alt="photo background">
+    <img class="cell" src="./asset/cell.png" alt="photo background">
+
+    <div class="box-page">
+
+        <div class="center-box">
+            <h1>Jokenpô</h1>
+
+            <p class="response"></p>
+
+            <div class="buttons">
+                <button class="rock" onclick="humanOption('rock')">👊🏼</button>
+                <button class="paper" onclick="humanOption('paper')">🖐🏼</button>
+                <button class="scissors" onclick="humanOption('scissors')">✌🏼️</button>
+            </div>
+
+            <p>Meus Pontos: <span class="humanpoint"> 0</span></p>
+            <p>Pontos Adversário: <span class="machinepoint"> 0</span></p>
+            
+        </div>
+    </div>
+
+
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
