@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Jokenpô</title>
 </head>
 
 <body>
 
-    <img class="computer" src="./asset/computer.png" alt="photo background">
-    <img class="cell" src="./asset/cell.png" alt="photo background">
+    <div class="container">
+        
 
-    <div class="box-page">
-
-        <div class="center-box">
+        <div class="box">
+            
             <h1>Jokenpô</h1>
-
-            <p class="response"></p>
 
             <div class="buttons">
                 <button class="rock" onclick="humanOption('rock')">👊🏼</button>
@@ -29,9 +30,10 @@
                 <button class="scissors" onclick="humanOption('scissors')">✌🏼️</button>
             </div>
 
-            <p>Meus Pontos: <span class="humanpoint"> 0</span></p>
-            <p>Pontos Adversário: <span class="machinepoint"> 0</span></p>
-            
+            <p class="resultShow">Meus Pontos: <span class="humanpoint"> 0</span></p>
+            <p class="resultShow">Pontos Adversário: <span class="machinepoint"> 0</span></p>
+            <p class="winner"></p>
+
         </div>
     </div>
 

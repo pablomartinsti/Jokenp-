@@ -1,4 +1,4 @@
-const response = document.querySelector('.response')
+const response = document.querySelector('.winner')
 const machinePoint = document.querySelector('.machinepoint')
 const humanPoint = document.querySelector('.humanpoint')
 
@@ -25,10 +25,9 @@ const computerOption = () => {
 
 const letsPlay = (human, machine) => {
 
-    console.log(human, machine)
 
     if (human === machine) {
-        response.innerHTML = "Deu Empate! 😕😕"
+        response.innerHTML = "Deu Empate! "
 
     } else if (human === 'paper' && machine === 'rock' ||
         human === 'rock' && machine === 'scissors' ||
@@ -43,10 +42,7 @@ const letsPlay = (human, machine) => {
 
         machinePoints++
         machinePoint.innerHTML=machinePoints
-        response.innerHTML = "Você Perdeu! 😔😔"
+        response.innerHTML = "Você Perdeu! "
     }
-
-
-
 
 }
